@@ -1,0 +1,1500 @@
+Epoch:  1  	Training Loss: 2.027405
+Accuracy of the network on the train data: 25 %
+Accuracy of the network on the test data: 18 %
+Epoch:  2  	Training Loss: 2.015178
+Accuracy of the network on the train data: 25 %
+Accuracy of the network on the test data: 18 %
+Epoch:  3  	Training Loss: 2.016739
+Accuracy of the network on the train data: 25 %
+Accuracy of the network on the test data: 18 %
+Epoch:  4  	Training Loss: 2.006745
+Accuracy of the network on the train data: 29 %
+Accuracy of the network on the test data: 12 %
+Epoch:  5  	Training Loss: 2.010098
+Accuracy of the network on the train data: 25 %
+Accuracy of the network on the test data: 18 %
+Epoch:  6  	Training Loss: 2.001894
+Accuracy of the network on the train data: 25 %
+Accuracy of the network on the test data: 18 %
+Epoch:  7  	Training Loss: 1.995694
+Accuracy of the network on the train data: 26 %
+Accuracy of the network on the test data: 25 %
+Epoch:  8  	Training Loss: 1.995050
+Accuracy of the network on the train data: 25 %
+Accuracy of the network on the test data: 25 %
+Epoch:  9  	Training Loss: 1.981721
+Accuracy of the network on the train data: 35 %
+Accuracy of the network on the test data: 25 %
+Epoch:  10  	Training Loss: 1.968819
+Accuracy of the network on the train data: 42 %
+Accuracy of the network on the test data: 25 %
+Epoch:  11  	Training Loss: 1.950908
+Accuracy of the network on the train data: 39 %
+Accuracy of the network on the test data: 18 %
+Epoch:  12  	Training Loss: 1.930943
+Accuracy of the network on the train data: 42 %
+Accuracy of the network on the test data: 18 %
+Epoch:  13  	Training Loss: 1.917379
+Accuracy of the network on the train data: 40 %
+Accuracy of the network on the test data: 18 %
+Epoch:  14  	Training Loss: 1.903408
+Accuracy of the network on the train data: 42 %
+Accuracy of the network on the test data: 18 %
+Epoch:  15  	Training Loss: 1.896805
+Accuracy of the network on the train data: 35 %
+Accuracy of the network on the test data: 18 %
+Epoch:  16  	Training Loss: 1.889021
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  17  	Training Loss: 1.904000
+Accuracy of the network on the train data: 40 %
+Accuracy of the network on the test data: 18 %
+Epoch:  18  	Training Loss: 1.880835
+Accuracy of the network on the train data: 40 %
+Accuracy of the network on the test data: 18 %
+Epoch:  19  	Training Loss: 1.879232
+Accuracy of the network on the train data: 34 %
+Accuracy of the network on the test data: 18 %
+Epoch:  20  	Training Loss: 1.875720
+Accuracy of the network on the train data: 42 %
+Accuracy of the network on the test data: 18 %
+Epoch:  21  	Training Loss: 1.870797
+Accuracy of the network on the train data: 40 %
+Accuracy of the network on the test data: 18 %
+Epoch:  22  	Training Loss: 1.876122
+Accuracy of the network on the train data: 40 %
+Accuracy of the network on the test data: 18 %
+Epoch:  23  	Training Loss: 1.862967
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  24  	Training Loss: 1.857811
+Accuracy of the network on the train data: 42 %
+Accuracy of the network on the test data: 18 %
+Epoch:  25  	Training Loss: 1.855441
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  26  	Training Loss: 1.877747
+Accuracy of the network on the train data: 40 %
+Accuracy of the network on the test data: 18 %
+Epoch:  27  	Training Loss: 1.857640
+Accuracy of the network on the train data: 40 %
+Accuracy of the network on the test data: 18 %
+Epoch:  28  	Training Loss: 1.851445
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  29  	Training Loss: 1.843475
+Accuracy of the network on the train data: 42 %
+Accuracy of the network on the test data: 18 %
+Epoch:  30  	Training Loss: 1.835955
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  31  	Training Loss: 1.829671
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  32  	Training Loss: 1.843034
+Accuracy of the network on the train data: 42 %
+Accuracy of the network on the test data: 18 %
+Epoch:  33  	Training Loss: 1.830014
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  34  	Training Loss: 1.825580
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  35  	Training Loss: 1.825306
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  36  	Training Loss: 1.823512
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  37  	Training Loss: 1.816688
+Accuracy of the network on the train data: 43 %
+Accuracy of the network on the test data: 18 %
+Epoch:  38  	Training Loss: 1.825272
+Accuracy of the network on the train data: 42 %
+Accuracy of the network on the test data: 18 %
+Epoch:  39  	Training Loss: 1.812711
+Accuracy of the network on the train data: 56 %
+Accuracy of the network on the test data: 31 %
+Epoch:  40  	Training Loss: 1.808093
+Accuracy of the network on the train data: 45 %
+Accuracy of the network on the test data: 18 %
+Epoch:  41  	Training Loss: 1.807373
+Accuracy of the network on the train data: 50 %
+Accuracy of the network on the test data: 25 %
+Epoch:  42  	Training Loss: 1.820935
+Accuracy of the network on the train data: 54 %
+Accuracy of the network on the test data: 31 %
+Epoch:  43  	Training Loss: 1.805426
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  44  	Training Loss: 1.797029
+Accuracy of the network on the train data: 48 %
+Accuracy of the network on the test data: 37 %
+Epoch:  45  	Training Loss: 1.791975
+Accuracy of the network on the train data: 48 %
+Accuracy of the network on the test data: 37 %
+Epoch:  46  	Training Loss: 1.790571
+Accuracy of the network on the train data: 48 %
+Accuracy of the network on the test data: 37 %
+Epoch:  47  	Training Loss: 1.785258
+Accuracy of the network on the train data: 48 %
+Accuracy of the network on the test data: 37 %
+Epoch:  48  	Training Loss: 1.784505
+Accuracy of the network on the train data: 48 %
+Accuracy of the network on the test data: 37 %
+Epoch:  49  	Training Loss: 1.778023
+Accuracy of the network on the train data: 48 %
+Accuracy of the network on the test data: 37 %
+Epoch:  50  	Training Loss: 1.775928
+Accuracy of the network on the train data: 48 %
+Accuracy of the network on the test data: 37 %
+Epoch:  51  	Training Loss: 1.775339
+Accuracy of the network on the train data: 48 %
+Accuracy of the network on the test data: 37 %
+Epoch:  52  	Training Loss: 1.769473
+Accuracy of the network on the train data: 50 %
+Accuracy of the network on the test data: 37 %
+Epoch:  53  	Training Loss: 1.766266
+Accuracy of the network on the train data: 50 %
+Accuracy of the network on the test data: 37 %
+Epoch:  54  	Training Loss: 1.764032
+Accuracy of the network on the train data: 50 %
+Accuracy of the network on the test data: 37 %
+Epoch:  55  	Training Loss: 1.761002
+Accuracy of the network on the train data: 50 %
+Accuracy of the network on the test data: 37 %
+Epoch:  56  	Training Loss: 1.759244
+Accuracy of the network on the train data: 50 %
+Accuracy of the network on the test data: 37 %
+Epoch:  57  	Training Loss: 1.759837
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  58  	Training Loss: 1.756081
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  59  	Training Loss: 1.754590
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  60  	Training Loss: 1.750319
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  61  	Training Loss: 1.748223
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  62  	Training Loss: 1.746269
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  63  	Training Loss: 1.744524
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  64  	Training Loss: 1.742593
+Accuracy of the network on the train data: 51 %
+Accuracy of the network on the test data: 37 %
+Epoch:  65  	Training Loss: 1.741034
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  66  	Training Loss: 1.739446
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  67  	Training Loss: 1.737754
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  68  	Training Loss: 1.736142
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  69  	Training Loss: 1.735012
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  70  	Training Loss: 1.733421
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  71  	Training Loss: 1.731644
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  72  	Training Loss: 1.730531
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  73  	Training Loss: 1.729078
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  74  	Training Loss: 1.727762
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  75  	Training Loss: 1.726312
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  76  	Training Loss: 1.725040
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  77  	Training Loss: 1.723836
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  78  	Training Loss: 1.722316
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  79  	Training Loss: 1.721328
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  80  	Training Loss: 1.719834
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  81  	Training Loss: 1.718374
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  82  	Training Loss: 1.717365
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  83  	Training Loss: 1.715692
+Accuracy of the network on the train data: 53 %
+Accuracy of the network on the test data: 37 %
+Epoch:  84  	Training Loss: 1.714765
+Accuracy of the network on the train data: 54 %
+Accuracy of the network on the test data: 37 %
+Epoch:  85  	Training Loss: 1.712999
+Accuracy of the network on the train data: 56 %
+Accuracy of the network on the test data: 37 %
+Epoch:  86  	Training Loss: 1.711973
+Accuracy of the network on the train data: 59 %
+Accuracy of the network on the test data: 37 %
+Epoch:  87  	Training Loss: 1.710705
+Accuracy of the network on the train data: 59 %
+Accuracy of the network on the test data: 37 %
+Epoch:  88  	Training Loss: 1.708862
+Accuracy of the network on the train data: 59 %
+Accuracy of the network on the test data: 37 %
+Epoch:  89  	Training Loss: 1.708064
+Accuracy of the network on the train data: 60 %
+Accuracy of the network on the test data: 37 %
+Epoch:  90  	Training Loss: 1.706692
+Accuracy of the network on the train data: 60 %
+Accuracy of the network on the test data: 37 %
+Epoch:  91  	Training Loss: 1.705113
+Accuracy of the network on the train data: 60 %
+Accuracy of the network on the test data: 37 %
+Epoch:  92  	Training Loss: 1.703872
+Accuracy of the network on the train data: 62 %
+Accuracy of the network on the test data: 37 %
+Epoch:  93  	Training Loss: 1.702588
+Accuracy of the network on the train data: 62 %
+Accuracy of the network on the test data: 37 %
+Epoch:  94  	Training Loss: 1.701671
+Accuracy of the network on the train data: 62 %
+Accuracy of the network on the test data: 37 %
+Epoch:  95  	Training Loss: 1.699759
+Accuracy of the network on the train data: 62 %
+Accuracy of the network on the test data: 37 %
+Epoch:  96  	Training Loss: 1.700376
+Accuracy of the network on the train data: 62 %
+Accuracy of the network on the test data: 37 %
+Epoch:  97  	Training Loss: 1.698163
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  98  	Training Loss: 1.696639
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  99  	Training Loss: 1.695338
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  100  	Training Loss: 1.693948
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  101  	Training Loss: 1.693018
+Accuracy of the network on the train data: 62 %
+Accuracy of the network on the test data: 37 %
+Epoch:  102  	Training Loss: 1.691347
+Accuracy of the network on the train data: 62 %
+Accuracy of the network on the test data: 43 %
+Epoch:  103  	Training Loss: 1.690171
+Accuracy of the network on the train data: 62 %
+Accuracy of the network on the test data: 43 %
+Epoch:  104  	Training Loss: 1.689127
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  105  	Training Loss: 1.687682
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  106  	Training Loss: 1.686619
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  107  	Training Loss: 1.685269
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  108  	Training Loss: 1.684060
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  109  	Training Loss: 1.682607
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  110  	Training Loss: 1.681966
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  111  	Training Loss: 1.680516
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  112  	Training Loss: 1.679328
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  113  	Training Loss: 1.678475
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  114  	Training Loss: 1.677426
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  115  	Training Loss: 1.676152
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  116  	Training Loss: 1.675081
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  117  	Training Loss: 1.673829
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  118  	Training Loss: 1.672967
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  119  	Training Loss: 1.671772
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  120  	Training Loss: 1.670778
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  121  	Training Loss: 1.669460
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  122  	Training Loss: 1.668987
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  123  	Training Loss: 1.667463
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  124  	Training Loss: 1.666901
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  125  	Training Loss: 1.665859
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  126  	Training Loss: 1.665036
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  127  	Training Loss: 1.663988
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  128  	Training Loss: 1.663178
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  129  	Training Loss: 1.662231
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  130  	Training Loss: 1.661498
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  131  	Training Loss: 1.660611
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  132  	Training Loss: 1.660031
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  133  	Training Loss: 1.658935
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  134  	Training Loss: 1.658176
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  135  	Training Loss: 1.657574
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  136  	Training Loss: 1.656858
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  137  	Training Loss: 1.656040
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  138  	Training Loss: 1.655498
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  139  	Training Loss: 1.654662
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  140  	Training Loss: 1.654199
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  141  	Training Loss: 1.653467
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  142  	Training Loss: 1.652710
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  143  	Training Loss: 1.652348
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  144  	Training Loss: 1.651710
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  145  	Training Loss: 1.651069
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  146  	Training Loss: 1.650522
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  147  	Training Loss: 1.650093
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  148  	Training Loss: 1.649546
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  149  	Training Loss: 1.648864
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  150  	Training Loss: 1.648530
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  151  	Training Loss: 1.648047
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  152  	Training Loss: 1.647595
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  153  	Training Loss: 1.647469
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  154  	Training Loss: 1.647017
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  155  	Training Loss: 1.646435
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  156  	Training Loss: 1.646085
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  157  	Training Loss: 1.645470
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  158  	Training Loss: 1.645263
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  159  	Training Loss: 1.644791
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  160  	Training Loss: 1.644478
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  161  	Training Loss: 1.643885
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  162  	Training Loss: 1.643872
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  163  	Training Loss: 1.643363
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  164  	Training Loss: 1.643124
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  165  	Training Loss: 1.642625
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  166  	Training Loss: 1.642895
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  167  	Training Loss: 1.642269
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  168  	Training Loss: 1.642014
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  169  	Training Loss: 1.641570
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  170  	Training Loss: 1.641418
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  171  	Training Loss: 1.640986
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  172  	Training Loss: 1.640843
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  173  	Training Loss: 1.640510
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  174  	Training Loss: 1.640396
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  175  	Training Loss: 1.639979
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  176  	Training Loss: 1.639916
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  177  	Training Loss: 1.639509
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  178  	Training Loss: 1.639508
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  179  	Training Loss: 1.639151
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  180  	Training Loss: 1.639022
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  181  	Training Loss: 1.638698
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  182  	Training Loss: 1.638647
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  183  	Training Loss: 1.638400
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  184  	Training Loss: 1.638175
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  185  	Training Loss: 1.638016
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  186  	Training Loss: 1.637720
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  187  	Training Loss: 1.637674
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  188  	Training Loss: 1.637459
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  189  	Training Loss: 1.637377
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  190  	Training Loss: 1.637030
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  191  	Training Loss: 1.637030
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  192  	Training Loss: 1.636755
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  193  	Training Loss: 1.636659
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  194  	Training Loss: 1.636402
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  195  	Training Loss: 1.636363
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  196  	Training Loss: 1.636149
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  197  	Training Loss: 1.635902
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  198  	Training Loss: 1.635733
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  199  	Training Loss: 1.635591
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  200  	Training Loss: 1.635453
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  201  	Training Loss: 1.635308
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  202  	Training Loss: 1.634975
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  203  	Training Loss: 1.634974
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  204  	Training Loss: 1.634713
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  205  	Training Loss: 1.634667
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  206  	Training Loss: 1.634258
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  207  	Training Loss: 1.634226
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  208  	Training Loss: 1.633867
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  209  	Training Loss: 1.633875
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  210  	Training Loss: 1.633372
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  211  	Training Loss: 1.633392
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  212  	Training Loss: 1.632899
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  213  	Training Loss: 1.632830
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  214  	Training Loss: 1.632422
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 43 %
+Epoch:  215  	Training Loss: 1.632361
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  216  	Training Loss: 1.631902
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  217  	Training Loss: 1.631725
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  218  	Training Loss: 1.631292
+Accuracy of the network on the train data: 64 %
+Accuracy of the network on the test data: 37 %
+Epoch:  219  	Training Loss: 1.631125
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  220  	Training Loss: 1.630876
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  221  	Training Loss: 1.630654
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  222  	Training Loss: 1.630306
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  223  	Training Loss: 1.630070
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  224  	Training Loss: 1.629771
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  225  	Training Loss: 1.629440
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  226  	Training Loss: 1.629191
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  227  	Training Loss: 1.628823
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  228  	Training Loss: 1.628690
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  229  	Training Loss: 1.628240
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  230  	Training Loss: 1.628105
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  231  	Training Loss: 1.627974
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  232  	Training Loss: 1.627441
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  233  	Training Loss: 1.627457
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  234  	Training Loss: 1.627112
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  235  	Training Loss: 1.626849
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  236  	Training Loss: 1.626627
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  237  	Training Loss: 1.626338
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  238  	Training Loss: 1.626161
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  239  	Training Loss: 1.625831
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  240  	Training Loss: 1.625689
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 37 %
+Epoch:  241  	Training Loss: 1.625456
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  242  	Training Loss: 1.625334
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  243  	Training Loss: 1.625021
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  244  	Training Loss: 1.624871
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  245  	Training Loss: 1.624728
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  246  	Training Loss: 1.624340
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  247  	Training Loss: 1.624239
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  248  	Training Loss: 1.623929
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  249  	Training Loss: 1.623892
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  250  	Training Loss: 1.623666
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  251  	Training Loss: 1.623359
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  252  	Training Loss: 1.623456
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  253  	Training Loss: 1.623193
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  254  	Training Loss: 1.623035
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  255  	Training Loss: 1.622874
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  256  	Training Loss: 1.622612
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  257  	Training Loss: 1.622561
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  258  	Training Loss: 1.622262
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  259  	Training Loss: 1.622134
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  260  	Training Loss: 1.621932
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  261  	Training Loss: 1.621932
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  262  	Training Loss: 1.621635
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  263  	Training Loss: 1.621580
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  264  	Training Loss: 1.621349
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  265  	Training Loss: 1.621251
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  266  	Training Loss: 1.621162
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  267  	Training Loss: 1.620989
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  268  	Training Loss: 1.620850
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  269  	Training Loss: 1.620716
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  270  	Training Loss: 1.620546
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  271  	Training Loss: 1.620652
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  272  	Training Loss: 1.620491
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  273  	Training Loss: 1.620265
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  274  	Training Loss: 1.620194
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  275  	Training Loss: 1.620067
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  276  	Training Loss: 1.620038
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  277  	Training Loss: 1.619731
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  278  	Training Loss: 1.619808
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  279  	Training Loss: 1.619585
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  280  	Training Loss: 1.619591
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  281  	Training Loss: 1.619465
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  282  	Training Loss: 1.619354
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  283  	Training Loss: 1.619340
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  284  	Training Loss: 1.619143
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  285  	Training Loss: 1.619130
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  286  	Training Loss: 1.618974
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  287  	Training Loss: 1.618939
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  288  	Training Loss: 1.618915
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  289  	Training Loss: 1.618780
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  290  	Training Loss: 1.618745
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  291  	Training Loss: 1.618623
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  292  	Training Loss: 1.618547
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  293  	Training Loss: 1.618507
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  294  	Training Loss: 1.618413
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  295  	Training Loss: 1.618458
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  296  	Training Loss: 1.618288
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  297  	Training Loss: 1.618319
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  298  	Training Loss: 1.618025
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  299  	Training Loss: 1.618378
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  300  	Training Loss: 1.617887
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  301  	Training Loss: 1.618180
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  302  	Training Loss: 1.617814
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  303  	Training Loss: 1.618114
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  304  	Training Loss: 1.617738
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  305  	Training Loss: 1.617966
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  306  	Training Loss: 1.617732
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  307  	Training Loss: 1.617854
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  308  	Training Loss: 1.617587
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  309  	Training Loss: 1.617705
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  310  	Training Loss: 1.617485
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  311  	Training Loss: 1.617679
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  312  	Training Loss: 1.617329
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  313  	Training Loss: 1.617565
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  314  	Training Loss: 1.617255
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  315  	Training Loss: 1.617510
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  316  	Training Loss: 1.617148
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  317  	Training Loss: 1.617428
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  318  	Training Loss: 1.617099
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  319  	Training Loss: 1.617342
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  320  	Training Loss: 1.617028
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  321  	Training Loss: 1.617236
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  322  	Training Loss: 1.616920
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  323  	Training Loss: 1.617117
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  324  	Training Loss: 1.616898
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  325  	Training Loss: 1.617041
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  326  	Training Loss: 1.616777
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  327  	Training Loss: 1.617011
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  328  	Training Loss: 1.616740
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  329  	Training Loss: 1.616904
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  330  	Training Loss: 1.616660
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  331  	Training Loss: 1.616880
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  332  	Training Loss: 1.616615
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  333  	Training Loss: 1.616866
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  334  	Training Loss: 1.616507
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  335  	Training Loss: 1.616790
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  336  	Training Loss: 1.617049
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  337  	Training Loss: 1.616924
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  338  	Training Loss: 1.616674
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  339  	Training Loss: 1.616715
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  340  	Training Loss: 1.616607
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  341  	Training Loss: 1.616657
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  342  	Training Loss: 1.616403
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  343  	Training Loss: 1.616582
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  344  	Training Loss: 1.616320
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  345  	Training Loss: 1.616586
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  346  	Training Loss: 1.616199
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  347  	Training Loss: 1.616452
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  348  	Training Loss: 1.616256
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  349  	Training Loss: 1.616353
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  350  	Training Loss: 1.616185
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  351  	Training Loss: 1.616286
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  352  	Training Loss: 1.616088
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  353  	Training Loss: 1.616286
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  354  	Training Loss: 1.615991
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  355  	Training Loss: 1.616218
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  356  	Training Loss: 1.615933
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  357  	Training Loss: 1.616129
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  358  	Training Loss: 1.615938
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  359  	Training Loss: 1.615982
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  360  	Training Loss: 1.615904
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  361  	Training Loss: 1.615967
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  362  	Training Loss: 1.615772
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  363  	Training Loss: 1.615977
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  364  	Training Loss: 1.615721
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  365  	Training Loss: 1.615825
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  366  	Training Loss: 1.615741
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  367  	Training Loss: 1.615781
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  368  	Training Loss: 1.615651
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  369  	Training Loss: 1.615700
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  370  	Training Loss: 1.615583
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  371  	Training Loss: 1.615720
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  372  	Training Loss: 1.615485
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  373  	Training Loss: 1.615648
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  374  	Training Loss: 1.615420
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  375  	Training Loss: 1.615540
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  376  	Training Loss: 1.615456
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  377  	Training Loss: 1.615468
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  378  	Training Loss: 1.615365
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  379  	Training Loss: 1.615462
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  380  	Training Loss: 1.615262
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  381  	Training Loss: 1.615487
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  382  	Training Loss: 1.615121
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  383  	Training Loss: 1.615369
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  384  	Training Loss: 1.615240
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  385  	Training Loss: 1.615204
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  386  	Training Loss: 1.615175
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  387  	Training Loss: 1.615221
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  388  	Training Loss: 1.615051
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  389  	Training Loss: 1.615225
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  390  	Training Loss: 1.614979
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  391  	Training Loss: 1.615121
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  392  	Training Loss: 1.615027
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  393  	Training Loss: 1.615045
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  394  	Training Loss: 1.614908
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  395  	Training Loss: 1.615065
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  396  	Training Loss: 1.614778
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  397  	Training Loss: 1.615014
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  398  	Training Loss: 1.614729
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  399  	Training Loss: 1.614900
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  400  	Training Loss: 1.614879
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  401  	Training Loss: 1.614803
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  402  	Training Loss: 1.614735
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  403  	Training Loss: 1.614842
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  404  	Training Loss: 1.614589
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  405  	Training Loss: 1.614829
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  406  	Training Loss: 1.614617
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  407  	Training Loss: 1.614633
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  408  	Training Loss: 1.614735
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  409  	Training Loss: 1.614622
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  410  	Training Loss: 1.614385
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  411  	Training Loss: 1.614754
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  412  	Training Loss: 1.614388
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  413  	Training Loss: 1.614488
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  414  	Training Loss: 1.614559
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  415  	Training Loss: 1.614419
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  416  	Training Loss: 1.614389
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  417  	Training Loss: 1.614412
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  418  	Training Loss: 1.614213
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  419  	Training Loss: 1.614507
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  420  	Training Loss: 1.614207
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  421  	Training Loss: 1.614253
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  422  	Training Loss: 1.614276
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  423  	Training Loss: 1.614269
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  424  	Training Loss: 1.614134
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  425  	Training Loss: 1.614288
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  426  	Training Loss: 1.614037
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  427  	Training Loss: 1.614112
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  428  	Training Loss: 1.614150
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  429  	Training Loss: 1.614303
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  430  	Training Loss: 1.614033
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  431  	Training Loss: 1.614167
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  432  	Training Loss: 1.613998
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  433  	Training Loss: 1.613936
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  434  	Training Loss: 1.614075
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  435  	Training Loss: 1.613909
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  436  	Training Loss: 1.613838
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  437  	Training Loss: 1.614047
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  438  	Training Loss: 1.613714
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  439  	Training Loss: 1.613819
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  440  	Training Loss: 1.613880
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  441  	Training Loss: 1.613795
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  442  	Training Loss: 1.613590
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  443  	Training Loss: 1.613886
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  444  	Training Loss: 1.613475
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  445  	Training Loss: 1.613698
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  446  	Training Loss: 1.613620
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  447  	Training Loss: 1.613589
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  448  	Training Loss: 1.613512
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  449  	Training Loss: 1.613711
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  450  	Training Loss: 1.613320
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  451  	Training Loss: 1.613514
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  452  	Training Loss: 1.613446
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  453  	Training Loss: 1.613361
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  454  	Training Loss: 1.613292
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  455  	Training Loss: 1.613481
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  456  	Training Loss: 1.613139
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  457  	Training Loss: 1.613353
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  458  	Training Loss: 1.613255
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  459  	Training Loss: 1.613208
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  460  	Training Loss: 1.613185
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  461  	Training Loss: 1.613281
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  462  	Training Loss: 1.612977
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  463  	Training Loss: 1.613124
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  464  	Training Loss: 1.613041
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  465  	Training Loss: 1.613138
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  466  	Training Loss: 1.612885
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  467  	Training Loss: 1.613065
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  468  	Training Loss: 1.612779
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  469  	Training Loss: 1.612991
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  470  	Training Loss: 1.612927
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  471  	Training Loss: 1.612796
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  472  	Training Loss: 1.612705
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  473  	Training Loss: 1.612870
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  474  	Training Loss: 1.612598
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  475  	Training Loss: 1.612660
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  476  	Training Loss: 1.612761
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  477  	Training Loss: 1.612550
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  478  	Training Loss: 1.612509
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  479  	Training Loss: 1.612572
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  480  	Training Loss: 1.612444
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  481  	Training Loss: 1.612634
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  482  	Training Loss: 1.612241
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  483  	Training Loss: 1.612616
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  484  	Training Loss: 1.612301
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  485  	Training Loss: 1.612336
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  486  	Training Loss: 1.612292
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  487  	Training Loss: 1.612362
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  488  	Training Loss: 1.612133
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  489  	Training Loss: 1.612316
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  490  	Training Loss: 1.611964
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  491  	Training Loss: 1.612205
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  492  	Training Loss: 1.612249
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  493  	Training Loss: 1.611971
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  494  	Training Loss: 1.611960
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  495  	Training Loss: 1.612036
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  496  	Training Loss: 1.611875
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  497  	Training Loss: 1.612027
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  498  	Training Loss: 1.611751
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  499  	Training Loss: 1.611954
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %
+Epoch:  500  	Training Loss: 1.611747
+Accuracy of the network on the train data: 65 %
+Accuracy of the network on the test data: 31 %

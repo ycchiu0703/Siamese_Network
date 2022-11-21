@@ -10,27 +10,19 @@ from torch.utils.data import Dataset
 from torchvision import datasets
 from torchvision import transforms as T
 from torch.optim.lr_scheduler import StepLR
-
+from torch.utils.tensorboard import SummaryWriter
 
 class SiameseNetwork(nn.Module):
     """
-        Siamese network for image similarity estimation.
-        The network is composed of two identical networks, one for each input.
-        The output of each network is concatenated and passed to a linear layer. 
-        The output of the linear layer passed through a sigmoid function.
-        `"FaceNet" <https://arxiv.org/pdf/1503.03832.pdf>`_ is a variant of the Siamese network.
-        This implementation varies from FaceNet as we use the `ResNet-18` model from
-        `"Deep Residual Learning for Image Recognition" <https://arxiv.org/pdf/1512.03385.pdf>`_ as our feature extractor.
-        In addition, we aren't using `TripletLoss` as the MNIST dataset is simple, so `BCELoss` can do the trick.
+    Siamese network for image similarity estimation.
+    The network is composed of two identical networks, one for each input.
+    The output of each network is concatenated and passed to a linear layer. 
+    The output of the linear layer passed through a sigmoid function.
     """
     def __init__(self):
         super(SiameseNetwork, self).__init__()
-        # get resnet model
+        # use resnet18 without pretrained weights
         self.resnet = torchvision.models.resnet18(weights=None)
-
-        # over-write the first conv layer to be able to read MNIST images
-        # as resnet18 reads (3,x,x) where 3 is RGB channels
-        # whereas MNIST has (1,x,x) where 1 is a gray-scale channel
         self.resnet.conv1 = nn.Conv2d(1, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
         self.fc_in_features = self.resnet.fc.in_features
         
@@ -68,7 +60,7 @@ class SiameseNetwork(nn.Module):
         # concatenate both images' features
         output = torch.cat((output1, output2), 1)
 
-        # pass the concatenation to the linear layers
+        # pass the concatenation to the classifier (linear layers)
         output = self.fc(output)
 
         # pass the out of the linear layers to sigmoid layer
@@ -77,10 +69,13 @@ class SiameseNetwork(nn.Module):
         return output
 
 class DatasetLoader(Dataset):
+    """
+    PyTorch dataset loader for generating input dataset
+    """
     def __init__(self, data, labels): 
         super(DatasetLoader, self).__init__()
 
-        self.data = torch.from_numpy(data).to(torch.int).unsqueeze(1).clone()
+        self.data = torch.from_numpy(data).to(torch.float).unsqueeze(1).clone()
         lbl_groups = np.unique(labels, return_counts=False)
         self.label_map = dict(zip(lbl_groups, range(len(lbl_groups))))
         self.grouped_examples = {self.label_map[grp]: np.where((grp==labels))[0] for grp in lbl_groups}
@@ -93,16 +88,13 @@ class DatasetLoader(Dataset):
     
     def __getitem__(self, index):
         """
-            For every example, we will select two images. There are two cases, 
-            positive and negative examples. For positive examples, we will have two 
-            images from the same class. For negative examples, we will have two images 
-            from different classes.
-            Given an index, if the index is even, we will pick the second image from the same class, 
-            but it won't be the same image we chose for the first class. This is used to ensure the positive
-            example isn't trivial as the network would easily distinguish the similarity between same images. However,
-            if the network were given two different images from the same class, the network will need to learn 
-            the similarity between two different images representing the same class. If the index is odd, we will 
-            pick the second image from a different class than the first image.
+        Pick 2 images each time, and make them into 2 cases, positive and negative ones.
+        positive: 2 images from the same class
+        negative: 2 images from the diff class
+        -----
+        Given an index
+        index is even: pick the second image from the same class.
+        index is odd : pick the second image from other classes.
         """
 
         # pick some random class for the first image
@@ -144,7 +136,6 @@ class DatasetLoader(Dataset):
             # ensure that the class of the second image isn't the same as the first image
             while other_selected_class == selected_class:
                 other_selected_class = random.randint(0, len(self.label_map) - 1)
-
             
             # pick a random index for the second image in the grouped indices based of the label
             # of the class
@@ -163,6 +154,15 @@ class DatasetLoader(Dataset):
 
 class LogManager:
     def __init__(self, log_path):
+        """
+        A log manager to write the training progress
+        If the log path is already exist, the original file will be removed
+        ---
+        Params:
+        log_path(str): path to the log file
+        ---
+        Returns:
+        """
         import os
         self.log_path = log_path
 
@@ -170,18 +170,44 @@ class LogManager:
             os.remove(log_path)
 
     def write(self, info):
+        """
+        To write the log line by line with time
+        ---
+        Params:
+        info(str): the information to be written in the log file
+        ---
+        Returns
+        """
         import datetime
 
         with open(self.log_path, 'a+') as log:
             print('[{}] {}'.format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), info), file=log)
 
-def dataSpliter(data, labels, test_ratio=0.2, seed=100):
+
+def dataSpliter(data, labels, test_ratio=0.2, seed=100, shuffle=True):
+    """
+    The data spliter which will split the data with the label distribution
+    ---
+    Params:
+    data(object): a python object to store data
+    labels(object): a python object to store labels
+    test_ratio(float): a spliting ratio for test dataset
+    seed(int): the random seed
+    shuffle(bool): indicator the shuffle the data
+    ---
+    Returns:
+    train_data(object): training data
+    train_labels(object): training labels
+    test_data(object): testing data
+    test_labels(object): testing labels
+    """
     np.random.seed(seed)
     grps = np.unique(labels)
     test_idx = []
     for _grp in grps:
         idx = np.where((_grp==labels))[0]
-        np.random.shuffle(idx)
+        if shuffle:
+            np.random.shuffle(idx)
         test_idx.append(idx[:int(len(idx) * test_ratio)])
     test_idx = np.concatenate(test_idx)
     train_idx = np.setdiff1d(np.arange(len(labels)), test_idx)
@@ -193,21 +219,23 @@ def dataSpliter(data, labels, test_ratio=0.2, seed=100):
 
 def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
-
-    # we aren't using `TripletLoss` as the MNIST dataset is simple, so `BCELoss` can do the trick.
     criterion = nn.BCELoss()
+
+    # total_loss = 0
 
     for batch_idx, (images_1, images_2, targets) in enumerate(train_loader):
         images_1, images_2, targets = images_1.to(device), images_2.to(device), targets.to(device)
         optimizer.zero_grad()
         outputs = model(images_1, images_2).squeeze()
         loss = criterion(outputs, targets)
+        # total_loss += loss.item()
         loss.backward()
         optimizer.step()
         if batch_idx % args.log_interval == 0:
-            args.log.write('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
-                            epoch, batch_idx * len(images_1), len(train_loader.dataset),
-                            100. * batch_idx / len(train_loader), loss.item()))
+            args.log.add_scalar('Loss/train', loss.item(), batch_idx)
+            # args.log.write('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
+            #                 epoch, batch_idx * len(images_1), len(train_loader.dataset),
+            #                 100. * batch_idx / len(train_loader), loss.item()))
             if args.dry_run:
                 break
 
@@ -217,7 +245,6 @@ def test(model, device, loader):
     loss = 0
     correct = 0
 
-    # we aren't using `TripletLoss` as the MNIST dataset is simple, so `BCELoss` can do the trick.
     criterion = nn.BCELoss()
 
     with torch.no_grad():
@@ -232,9 +259,6 @@ def test(model, device, loader):
     acc = correct / total
     loss /= total
 
-    # print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
-    #     loss, correct, len(test_loader.dataset),
-    #     100. * correct / len(test_loader.dataset)))
     return total, acc, loss
     
 
@@ -285,6 +309,9 @@ def main():
         test_kwargs.update(cuda_kwargs)
 
     data = np.load(args.data_path, allow_pickle=True)
+    # val, cnt = np.unique(data, return_counts=True)
+    # print(dict(zip(val, cnt)))
+    data = data / data.max()
     labels = np.load(args.label_path, allow_pickle=True)
     train_data, train_labels, test_data, test_labels = dataSpliter(data, labels)
 
@@ -295,37 +322,43 @@ def main():
 
     model = SiameseNetwork().to(device)
     # optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
-    optimizer = optim.Adam(model.parameters(), lr=args.lr)
-    print()
+    # optimizer = optim.Adam(model.parameters(), lr=args.lr)
+    optimizer = optim.SGD(model.parameters(), lr=args.lr)
 
-    args.log = LogManager(args.log_path)
+    # args.log = LogManager(args.log_path)
+    args.log = SummaryWriter(log_dir=args.log_path)
     scheduler = StepLR(optimizer, step_size=args.sched_step, gamma=args.sched_gamma)
     best_acc = 0.0
 
-    args.log.write(f'Batch Size: {args.batch_size}')
-    args.log.write(f'Test Batch Size: {args.test_batch_size}')
-    args.log.write(f'Epochs: {args.epochs}')
-    args.log.write(f'Learning Rate: {args.lr}')
-    args.log.write(f'Scheduler Step: {args.sched_step}')
-    args.log.write(f'Scheduler Gamma: {args.sched_gamma}')
-    args.log.write(f'Log Path: {args.log_path}')
-    args.log.write(f'Optimizer: {type(optimizer).__name__}')
-    args.log.write('')
+    # args.log.write(f'Batch Size: {args.batch_size}')
+    # args.log.write(f'Test Batch Size: {args.test_batch_size}')
+    # args.log.write(f'Epochs: {args.epochs}')
+    # args.log.write(f'Learning Rate: {args.lr}')
+    # args.log.write(f'Scheduler Step: {args.sched_step}')
+    # args.log.write(f'Scheduler Gamma: {args.sched_gamma}')
+    # args.log.write(f'Log Path: {args.log_path}')
+    # args.log.write(f'Optimizer: {type(optimizer).__name__}')
+    # args.log.write('')
     for epoch in range(1, args.epochs + 1):
         train(args, model, device, train_loader, optimizer, epoch)
         train_samples, train_acc, train_loss = test(model, device, train_loader)
         test_samples, test_acc, test_loss = test(model, device, test_loader)
 
-        args.log.write('')
-        args.log.write('Train set: Accuracy: {:.4f} Loss: {:.4f}'.format(train_acc, train_loss))
-        args.log.write('Test set: Accuracy: {:.4f} Loss: {:.4f}'.format(test_acc, test_loss))
-        args.log.write('')
+        # args.log.write('')
+        # args.log.write('Train set: Accuracy: {:.4f} Loss: {:.4f}'.format(train_acc, train_loss))
+        # args.log.write('Test set: Accuracy: {:.4f} Loss: {:.4f}'.format(test_acc, test_loss))
+        # args.log.write('')
+        args.log.add_scalar('Accuracy/test', test_acc, epoch)
+        args.log.add_scalar('Loss/test', test_loss, epoch)
         scheduler.step()
 
         if args.save_best_model and test_loss>best_acc:
             best_acc = test_loss
             torch.save(model.state_dict(), "siamese_network.pt")
 
+    args.log.flush()
+    args.log.close()
 
 if __name__ == '__main__':
+    # python siamese_net.py --data-path img_data_all.npy --label-path img_label_all.npy --batch-size 16 --test-batch-size 32 --epoch 15 --lr 0.001 --sched-step 1 --sched-gamma 0.8 --log-path train_log --log-interval 10 --save-best-model
     main()

@@ -1,46 +1,37 @@
 import pandas as pd
 import numpy as np
-from sklearn import ensemble, preprocessing, metrics
-from sklearn.metrics import f1_score
-from joblib import dump,load
-from sklearn import model_selection
-from sklearn.metrics import accuracy_score, precision_recall_fscore_support
-from sklearn.metrics import recall_score, precision_score
-import networkx as nx
-import os
 import ast
-import copy
 
 syscallCategory = {
-        'kernel' : ['rt_sigaction', 'uname', 'setgid', 'getpriority', 'time', 'clone', 'restart_syscall', 'sysinfo', 'prlimit64', 'geteuid', 'kill', 'umask', 'getppid', 'set_robust_list', 'setresuid', 'nanosleep', 'rt_sigprocmask', 'prctl', 'times', 'mmap', 'setsid', 'vfork', 'wait4', 'getuid', 'gettid', 'set_tid_address', 'fork', 'rt_sigsuspend', 'setpriority', 'ptrace', 'get_thread_area', 'exit', 'alarm', 'setpgid', 'setresgid', 'set_thread_area', 'sigaltstack', 'getrlimit', 'getpid', 'futex', 'setrlimit', 'getegid', 'tgkill', 'setuid', 'exit_group', 'clock_gettime', 'getgid', 'rt_sigtimedwait', 'setitimer', 'getpgrp', 'gettimeofday','mmap2','ni_syscall','sigreturn','waitpid'],
+    'kernel_signal' : ['rt_sigaction', 'restart_syscall','kill', 'rt_sigprocmask','rt_sigsuspend','sigaltstack','tgkill','rt_sigtimedwait','sigreturn'],
 
-        'fs' : ['stat', 'lseek', 'readlinkat', 'chroot', 'sendfile', 'umount2', 'symlink', 'flock', 'dup2', 'getcwd', 'chdir', 'fstat', 'mount', 'rmdir', 'execve', 'mkdir', 'epoll_wait', 'openat', 'eventfd2', 'readv', 'rename', 'epoll_create1', 'fchmod', 'pipe', 'unlink', 'pipe2', 'fcntl', 'open', 'read', 'write', 'lstat', 'chmod', 'readlink', 'getdents64', 'utimes', 'ioctl', 'select', 'access', 'close', 'poll', 'getdents', 'epoll_ctl', 'ftruncate','_llseek','_newselect','fcntl64','fstat64','llseek','lstat64','renameat2','stat64'],
+    'kernel_sys' : ['uname', 'setgid', 'getpriority', 'sysinfo', 'prlimit64','geteuid','umask', 'getppid', 'setresuid','prctl', 'times','mmap','setsid','getuid', 'gettid', 'setpriority','setpgid', 'setresgid','getrlimit','getpid','setrlimit','getegid','setuid','getgid','getpgrp','mmap2','ni_syscall'],
 
-        'net' : ['accept', 'connect', 'sendto', 'shutdown', 'getsockname', 'getpeername', 'listen', 'socketpair', 'socket', 'setsockopt', 'getsockopt', 'recvfrom', 'recvmsg', 'bind','recv','send','sendfile64','socketcall'],
+    'kernel_others' : ['time','gettimeofday','alarm','clone','vfork','set_tid_address', 'fork','set_robust_list','futex','nanosleep','wait4','exit','exit_group','waitpid','ptrace','get_thread_area','set_thread_area','clock_gettime','setitimer'],
 
-        'mm' : ['mprotect', 'brk', 'munmap', 'madvise'],
+    'fs' : ['stat', 'lseek', 'readlinkat', 'chroot', 'sendfile', 'umount2', 'symlink', 'flock', 'dup2', 'getcwd', 'chdir', 'fstat', 'mount', 'rmdir', 'execve', 'mkdir', 'epoll_wait', 'openat', 'eventfd2', 'readv', 'rename', 'epoll_create1', 'fchmod', 'pipe', 'unlink', 'pipe2', 'fcntl', 'open', 'read', 'write', 'lstat', 'chmod', 'readlink', 'getdents64', 'utimes', 'ioctl', 'select', 'access', 'close', 'poll', 'getdents', 'epoll_ctl', 'ftruncate','_llseek','_newselect','fcntl64','fstat64','llseek','lstat64','renameat2','stat64'],
 
-        'ipc' : ['shmdt', 'shmget'],
+    'net' : ['accept', 'connect', 'sendto', 'shutdown', 'getsockname', 'getpeername', 'listen', 'socketpair', 'socket', 'setsockopt', 'getsockopt', 'recvfrom', 'recvmsg', 'bind','recv','send','sendfile64','socketcall'],
 
-        'printk' : ['syslog'],
+    'mm' : ['mprotect', 'brk', 'munmap', 'madvise'],
 
-        'sched' : ['sched_getaffinity'],
+    'sched' : ['sched_getaffinity'],
     
-        'HighFreq' : ['_newselect','close','connect','fcntl','get_thread_area','getsockopt','open','read','recv','recvfrom','rt_sigaction','rt_sigprocmask','sendto','socket','time'],
+    'HighFreq' : ['_newselect','close','connect','fcntl','get_thread_area','getsockopt','open','read','recv','recvfrom','rt_sigaction','rt_sigprocmask','sendto','socket','time'],
 
-        'other' : [ 'getegid32','geteuid32','getgid32','getuid32','setgid32','setresuid32','setuid32','sysctl','ugetrlimit']
+    'others' : [ 'getegid32','geteuid32','getgid32','getuid32','setgid32','setresuid32','setuid32','sysctl','ugetrlimit','syslog', 'shmdt', 'shmget']
 }
 
 fam = {
-    'kernel':0,
-    'fs':1,
-    'net':2,
-    'mm':3,
-    'ipc':4,
-    'printk':5,
+    'kernel_signal':0,
+    'kernel_sys':1,
+    'kernel_others':2,
+    'fs':3,
+    'net':4,
+    'mm':5,
     'sched':6,
     'HighFreq':7,
-    'other':8
+    'others':8
 }
 
 def get_key(target):

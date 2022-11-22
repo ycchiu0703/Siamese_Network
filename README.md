@@ -13,13 +13,13 @@
 * Future Work
 * Reference
 
-[HackMD](https://hackmd.io/L9i8zYMxTb661-YRsmLjQg?view)
+[Traditional Chinese Report @ HackMD](https://hackmd.io/L9i8zYMxTb661-YRsmLjQg?view)
 
 # Dataset Generation
 
-我們將樣本從VirusTotal下載，利用每個樣本的Hash name (SHA1)來獲取相對應的Report，再將樣本放入實驗室的Sandbox中，提取出Syscall的資訊以及相對應的時間序列，藉此組成本次實驗的資料集
+We download the samples from VirusTotal, use the Hash name (SHA1) of each sample to obtain the corresponding Report, then put the samples into the Sandbox of the laboratory, extract the Syscall information and the corresponding time series, and thus compose Dataset for this experiment.
 
-* 如下圖所示資料集中總共有29221筆資料，並包含12個類別
+* As shown in the figure below, there are a total of 29221 data in the data set, and it contains 12 categories.
 
 ```python=
 mirai       :  20475
@@ -44,11 +44,11 @@ hiddad      :  1
 
 ### Balance dataset
 
-我們觀察發現：其中類別`mirai`佔了總資料的70%左右，同時類別`mirai`+`unknown`更是佔了99.6%，而`zbot` + `skeeyah` + `hiddad`僅佔總資料的0.01%，由此可見資料集中的樣本分佈相當不平衡。
+We observed that the category `mirai` accounted for about 70% of the total data, and the category `mirai`+`unknown` accounted for 99.6%, while `zbot` + `skeeyah` + `hiddad` only accounted for the total data 0.01% of , it can be seen that the distribution of samples in the data set is quite unbalanced.
 
-為了解決樣本分佈不平衡的問題，我們決定只取樣本數相對多的家族(家族樣本>=10)，同時為了在樣本分佈和現實場景分佈之間取得權衡，我們只在各家族中取至多50個樣本來組成我們的資料集
+In order to solve the problem of unbalanced sample distribution, we decided to only take families with a relatively large number of samples (family samples>=10). samples to form our data set
 
-* 如下圖所示平衡後的資料集中總共有219筆資料，並包含8個類別
+* As shown in the figure below, the balanced data set has a total of 219 data and contains 8 categories.
 
 ```python=
 mirai       :  50
@@ -65,7 +65,7 @@ wroba       :  14
 
 ### Organize time series
 
-每一筆使用的syscall和執行時間序列如下所示 :
+The syscall and execution time series used by each transaction are as follows:
 
 ```python=
 [('1659223215.715424', 'execve'), 
@@ -75,7 +75,7 @@ wroba       :  14
  ('1659223215.804770', 'socket'),...]
 ```
 
-校對執行時間，每個sample皆從時間0.0開始
+Proofread execution time, each sample starts from time 0.0.
 
 ```python=
 syscall_list = []
@@ -101,7 +101,7 @@ for i in range(len(dataset)):
 
 ### SyscallCategory 
 
-我們參考[Searchable Linux Syscall Table for x86 and x86_64](https://filippo.io/linux-syscall-table/)，將Syscall分成8類，並新增paper中定義的`HighFreq`作為一類，如下所示:
+We refer to [Searchable Linux Syscall Table for x86 and x86_64](https://filippo.io/linux-syscall-table/) to divide Syscall into 8 categories, and add `HighFreq` defined in the paper as a category, as follows:
 
 ```python=
 SyscallCategory_Original = {
@@ -125,7 +125,7 @@ SyscallCategory_Original = {
     }
 ```
 
-我們觀察發現:`ipc`和`printk`種類的Syscall出現次數過少，而其中kernel種類的syscall占大多數，因此依照行為將其切分成3種，並將`ipc`和`printk`合併至`others`中，如下所示:
+We observed that the occurrences of `ipc` and `printk` types of Syscalls are too few, and the kernel type syscalls account for the majority, so they are divided into three types according to the behavior, and `ipc` and `printk` are merged into` others`, as follows:
 
 ```python=
 SyscallCategory = {
@@ -148,11 +148,12 @@ SyscallCategory = {
     'others' : [ 'getegid32','geteuid32','getgid32','getuid32','setgid32','setresuid32','setuid32','sysctl','ugetrlimit','syslog', 'shmdt', 'shmget']
 }
 ```
-我們根據兩種不同的Syscall分類方式，進行孿生網路的實驗，並比較兩者之間的差異，第一種分類方式在本文中都稱為"Original SyscallCategory"，第二種則是我們根據上述考量修改的分類方式，在本文中稱為"SyscallCategory"。
+
+We conduct twin network experiments based on two different Syscall classification methods and compare the differences between the two. The first classification method is called "Original SyscallCategory" in this article, and the second is based on the above Consider the classification of modifications, referred to in this document as "SyscallCategory".
 
 ### Generate Grayscale Image
 
-雖然論文中使用RGB產生Image，但我們認為灰階圖可以更好的表示每個Syscall類別出現的頻率，也可以視作為一種Frequency Encoding，所以使用灰階圖取代RGB-Image。
+Although the paper uses RGB to generate the Image, we believe that the grayscale image can better represent the frequency of each Syscall category, and can also be regarded as a Frequency Encoding, so the grayscale image is used instead of the RGB-Image.
 
 ```python=
 t_step = 16
@@ -180,7 +181,7 @@ for i in range(len(syscall_list)):
 
 ## Model-Siamese Network
 
-以下為孿生網路架構:
+The following is the Siamese network architecture:
 
 ```python=
 class SiameseNetwork(nn.Module):
@@ -244,43 +245,46 @@ class SiameseNetwork(nn.Module):
 
 ### Original Syscall Category + Siamese Network
 
-Training loss如下圖所示，後面比較淡的是真實的曲線，前面亮橘色的是大概的趨勢，我們可以透過觀察真實曲線發現loss在訓練的過程中不斷震盪，但大致趨勢都保持在0.4-0.5之間。
+The training loss is shown in the figure below. 
+The lighter one in the back is the real curve, and the brighter orange in the front is the approximate trend. 
+We can observe the real curve and find that the loss is constantly oscillating during the training process, but the general trend remains at 0.4- between 0.5.
 
 ![](https://i.imgur.com/6LrAQqs.png)
 
-Testing loss如下圖所示，可以發現大致趨勢有明顯下降。
+Testing loss is shown in the figure below, and it can be found that the general trend has decreased significantly.
 
 ![](https://i.imgur.com/CgiHNMP.png)
 
-Testing Accuracy如下圖所示，在訓練過程中有上升的趨勢。
+Testing Accuracy As shown in the figure below, there is an upward trend during the training process.
 
 ![](https://i.imgur.com/kbta5lS.png)
 
 
 ### Syscall Category + Siamese Network
 
-Training loss如下圖所示，我們可以發現loss在訓練的過程中雖然也大致趨勢都保持在0.4-0.5之間，但與上面相比平均的loss還是略大一些
+Training loss is shown in the figure below. We can find that although the general trend of loss remains between 0.4-0.5 during the training process, the average loss is still slightly larger than the above.
 
 ![](https://i.imgur.com/Yr9utTR.png)
 
-Testing loss如下圖所示，可以發現大致趨勢雖然也有下降，但與上面相比平均的loss還是略大一些。
+Testing loss is shown in the figure below. It can be seen that although the general trend has also declined, the average loss is still slightly larger than the above.
 
 ![](https://i.imgur.com/TliNEF1.png)
 
-Testing Accuracy如下圖所示，雖然也有明顯上升的趨勢，但相較於上面仍然略差一些。
+Testing Accuracy is shown in the figure below. Although there is an obvious upward trend, it is still slightly worse than the above.
 
 ![](https://i.imgur.com/rMCDni0.png)
 
 # Compared Methods
 
-我們根據比較論文進行實作並改良，沿用了大部分比較論文的架構並加上自己的想法進行實驗，下圖為比較論文中的模型架構：
+We implemented and improved based on the comparative papers, and followed the structure of most of the comparative papers and added our own ideas for experiments. The following figure shows the model architecture in the comparative papers:
 
 ![](https://i.imgur.com/RFUtHxP.png)
 
 ## Preprocessing
 
-由於比較論文的目標是在做few-shot learning，所以我們從資料集中每個家族各取10筆形成我們新的資料集。
-* 如下圖所示資料集中總共有80筆資料，並包含8個類別
+Since the goal of the comparison paper is to do few-shot learning, we take 10 records from each family in the data set to form our new data set.
+
+* As shown in the figure below, there are a total of 80 data in the data set, and it contains 8 categories
 
 ```python=
 mirai       :  10
@@ -294,7 +298,8 @@ wroba       :  10
 ```
 
 
-我們將比較論文模型架構中的Word Embedding移到Data Preprocessing中，利用[`gensim.models.phrases`](https://radimrehurek.com/gensim/models/phrases.html)套件進行Word 2 Vector，將每個Syscall embedding 成100維的向量，並將每個樣本中每個embedding後的Syscall向量加總。
+We moved the Word Embedding in the comparative paper model architecture to Data Preprocessing, using [`gensim.models.phrases`](https://radimrehurek.com/gensim/models/phrases.html) to make Word 2 Vector.
+Convert each Syscall embedding into a 100-dimensional vector, and sum the Syscall vectors after each embedding in each sample.
 
 ```python=
 # bigram w2v
@@ -312,14 +317,14 @@ for i in Seq:
 
 ```
 
-接下來對每個樣本做正規化，並將結果作為我們樣本的特徵。
+Next, regularize each sample and use the result as the feature of our sample.
 
 ```python=
 # normalization
 X = np.array(X) / np.max(np.array(X), axis=0)
 ```
 
-資料集共80筆，我們將資料集以8:2切分成訓練集和測試集，訓練集64筆，測試集16筆。
+There are a total of 80 records in the data set. We divide the data set into a training set and a test set at 8:2, with 64 records in the training set and 16 records in the test set.
 
 ```python=
 # Split dataset to train and test
@@ -331,7 +336,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, label, test_size = 0.2, s
 
 ## Model-SIMPLE
 
-以下是我們修改後的模型架構，包含BiLSTM層和兩個卷積層，並都使用relu作為激活函數:
+The following is our modified model architecture, which contains a BiLSTM layer and two convolutional layers, and both use relu as the activation function:
 
 ```python=
 class SIMPLE_model(torch.nn.Module):
@@ -366,7 +371,7 @@ class SIMPLE_model(torch.nn.Module):
 
 ## Model-CNN
 
-為了評估比較模型架構，我們實做了CNN模型進行比較，架構如下圖:
+In order to evaluate and compare the model architecture, we implemented the CNN model for comparison. The architecture is as follows:
 
 ```python=
 class CNN_model(torch.nn.Module):
@@ -405,27 +410,26 @@ class CNN_model(torch.nn.Module):
 
 
 
-| Methods|Training Accuracy|Testing Accuracy|
-| ------ | -------- | -------- |
-|Original Syscall Category + Siamese Network|--   |74.3%|
-|Syscall Category + Siamese Network|--|73.8% |
-|W2V + Model-SIMPLE|78%|62%|
-|W2V + Model-CNN|82%|56%|
+| Methods                                   |Training Accuracy|Testing Accuracy|
+| ------                                    | --------        | --------       |
+|Original Syscall Category + Siamese Network|--               |74.3%           |
+|Syscall Category + Siamese Network         |--               |73.8%           |
+|W2V + Model-SIMPLE                         |78%              |62%             |
+|W2V + Model-CNN                            |82%              |56%             |
 
-藉由觀察上面實驗結果，我們發現：
-1. 在孿生網路和W2V的方法進行比較，孿生網路的準確率明顯優於W2V的方法。
-2. 在孿生網路中，不同的Syscall分類方法得到相近的結果，差距僅在0.5%左右，證明在不同的Syscall分類方法上，孿生網路都可以得到不錯的結果。
-3. 在model-SIMPLE和model-CNN之間，加入BiLSTM層為準確率提高了6%左右，證明比較論文的模型架構比傳統的CNN模型表現更好。
+By observing the above experimental results, we found that:
+1. Comparing the Siamese network and W2V methods, the accuracy of the twin network is significantly better than the W2V method.
+2. In the Siamese network, different Syscall classification methods get similar results, and the gap is only about 0.5%, which proves that the Siamese network can get good results on different Syscall classification methods.
+3. Between model-SIMPLE and model-CNN, adding the BiLSTM layer increases the accuracy rate by about 6%, which proves that the model architecture of the comparison paper performs better than the traditional CNN model.
 
 # Future Work
 
-進行完本次實驗後，我們提出了幾點，未來可以在持續改進的方向：
-1. 由於我們在解決各家族樣本數不平衡的問題時，在約兩萬筆`mirai`和約八千筆`unknown`中只各隨機取了50筆樣本，我們猜測取的樣本無法表現出這兩個類別樣本的特性，造成孿生網路的準確率無法提高，未來可以嘗試設計出某些方法，可以取出較具有代表性的樣本以提高準確率。
-2. 在比較論文方面，效果不如預期，我們猜測是因為樣本數過少，即便是Few-shot learning，也需要一定量的樣本，才可以達到較高的準確率。
-
+After conducting this experiment, we put forward two points, which can be continuously improved in the future:
+1. Since we only randomly selected 50 samples from about 20,000 `mirai` and about 8,000 `unknown` when we solved the problem of unbalanced samples in each family, we guessed that the samples we took could not show the two Due to the characteristics of each category of samples, the accuracy of the twin network cannot be improved. In the future, we can try to design some methods that can take out more representative samples to improve the accuracy.
+2. In terms of comparing papers, the effect is not as expected. We guess that the number of samples is too small. Even Few-shot learning requires a certain amount of samples to achieve a high accuracy rate.
 
 # Reference
 
-1. TANG, Mingdong; QIAN, Quan. Dynamic API call sequence visualisation for malware classification. IET Information Security, 2019, 13.4: 367-377.
+1. [TANG, Mingdong; QIAN, Quan. Dynamic API call sequence visualisation for malware classification. IET Information Security, 2019, 13.4: 367-377.](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/iet-ifs.2018.5268)
 
-2. WANG, Peng; TANG, Zhijie; WANG, Junfeng. A novel few-shot malware classification approach for unknown family recognition with multi-prototype modeling. Computers & Security, 2021, 106: 102273.
+2. [WANG, Peng; TANG, Zhijie; WANG, Junfeng. A novel few-shot malware classification approach for unknown family recognition with multi-prototype modeling. Computers & Security, 2021, 106: 102273.](https://www.sciencedirect.com/science/article/pii/S0167404821000973)

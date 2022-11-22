@@ -120,13 +120,15 @@ def data_preprocessing(dataset, label):
     model = Word2Vec(bigram_transformer[Seq], min_count = 1)
     word_dict = dict(zip(model.wv.index_to_key, model.wv.vectors))
 
-    # normalization
+    # 
     X = []
     for i in Seq:
         tmp = np.zeros(100)
         for j in i:
             tmp += word_dict[j]
         X.append(tmp)
+
+    # normalization
     X = np.array(X) / np.max(np.array(X), axis=0)
 
     # Split dataset to train and test
@@ -167,7 +169,7 @@ def data_preprocessing(dataset, label):
 
     
 if __name__ == "__main__":
-    dataset, label = load_dataset(r'./../Labels_TimeSyscallSeqs.csv')
+    dataset, label = load_dataset(r'/mnt/bigDisk/weiren/Labels_TimeSyscallSeqs.csv')
     strace_train, strace_test =  data_preprocessing(dataset, label)
     n_epochs = 10000
     batch_size = 1

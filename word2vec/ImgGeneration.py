@@ -46,7 +46,7 @@ def get_key(target):
         return ['other']
 
 ###generate dataset
-dataset = pd.read_csv(r'./../Labels_TimeSyscallSeqs.csv')
+dataset = pd.read_csv(r'/mnt/bigDisk/weiren/Labels_TimeSyscallSeqs.csv')
 new_dataset = []
 cnt_mirai = 0
 cnt_unknown = 0
